@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tristanbrewee.javafx.controllers.DrawWindowController">
+   <children>
+      <BorderPane prefHeight="800.0" prefWidth="800.0">
+         <center>
+            <StackPane fx:id="stcStackPane" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Canvas fx:id="cnvCanvas" height="750.0" width="750.0" />
+               </children>
+            </StackPane>
+         </center>
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnDraw" mnemonicParsing="false" onAction="#btnDrawClicked" text="DRAW" />
+                  <Button fx:id="btnSave" alignment="CENTER" mnemonicParsing="false" onAction="#btnSaveClicked" text="SAVE" />
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
